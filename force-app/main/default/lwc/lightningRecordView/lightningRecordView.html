@@ -1,0 +1,16 @@
+<template>
+    
+    <lightning-card title="Record View compact" class="slds-var-m-around_medium">
+        <lightning-record-form record-id={recordId} object-api-name={objectApiName} mode="edit" columns="2" layout-type="Compact"></lightning-record-form>
+    </lightning-card>
+
+    <lightning-card title="Record View" class="slds-var-m-around_medium">
+        <lightning-record-view-form record-id={recordId} object-api-name={objectApiName}>
+            <div>
+                <lightning-output-field field-name="Name"></lightning-output-field>
+                <lightning-output-field field-name="Phone"></lightning-output-field>
+            </div>
+        </lightning-record-view-form>
+    </lightning-card>
+
+</template>

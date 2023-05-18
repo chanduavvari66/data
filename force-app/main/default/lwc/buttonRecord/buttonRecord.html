@@ -1,0 +1,24 @@
+<template>
+    <lightning-button style="padding-left:40%;" variant="Brand" label="Project 5 : Create Record" title="Create Record" onclick={showBox}></lightning-button>    
+        <template if:true={isShowBox}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideBox}>
+            <span class="slds-assistive-text">Close</span>
+        </button>
+    <lightning-card title="Creation of Account" icon-name="standard:work_order_item">
+        <div class="slds-m-around_medium">
+        <lightning-record-edit-form object-api-name="Account" onsuccess={handleSuccess}>
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field field-name="Phone"></lightning-input-field>
+            <div style="padding-left:100px; padding-bottom:10px;">
+                <lightning-button style="margin:50px;" variant="Neutral" label="Cancel" onclick={hideBox}></lightning-button>
+                <lightning-button style="margin:50px;" variant="brand" type="submit" name="save" label="Create Account"></lightning-button>
+            </div>
+      </lightning-record-edit-form>
+      </div>
+    </lightning-card>
+                </div>
+            </section>
+        </template>
+</template>

@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Project 1 : Simple Calculator" icon-name="standard:all" class="slds-var-m-around_medium">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="number" name="firstNumber" label="Number 1" onchange={numberChangeHandler}></lightning-input>
+            <lightning-input type="number" name="secondNumber" label="Number 2" onchange={numberChangeHandler}></lightning-input>
+            <div class="slds-var-m-around_medium">   
+            <lightning-button-group>
+                    <lightning-button label="Addition" icon-name="utility:add" icon-position="right" onclick={addHandler}></lightning-button>
+                    <lightning-button label="Subtract" icon-name="utility:dash" icon-position="right" onclick={subHandler}></lightning-button>
+                    <lightning-button label="Multiply" icon-name="utility:close" icon-position="right" onclick={mulHandler}></lightning-button>
+                    <lightning-button label="Division" icon-name="utility:magicwand" icon-position="right"  onclick={divHandler}></lightning-button>
+                </lightning-button-group>
+            </div>  
+                <div>
+                <lightning-formatted-text value={currentResult}></lightning-formatted-text>
+                </div>
+        </div>         
+             <!-- <lightning-input type="checkbox" label="Show Previous Results" onchange={showPreviousResultToggle} ></lightning-input>
+                <template if:true={showPreviousResults}>
+                    <ul>
+                        <template iterator:result={previousResults}>
+                            <li key={result.value}>
+                                <div if:true={result.first} class="slds-border_top"></div>
+                                <lightning-formatted-text value={result.value}></lightning-formatted-text>
+                                <div if:true={result.last} class="slds-border_bottom"></div>
+                            </li>
+                        </template>
+                    </ul>
+                </template> -->
+    </lightning-card>
+</template>

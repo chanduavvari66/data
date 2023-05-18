@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Project 3 : Creation of Account" icon-name="standard:work_order_item">
+        <div class="slds-var-m-around_medium">
+        <lightning-record-edit-form object-api-name="Account" onsuccess={handleSuccess}>
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field field-name="Phone"></lightning-input-field>
+            <div style="padding-left:100px;">
+                <lightning-button style="margin:5px;" variant="Neutral" label="Cancel" onclick={handleReset}></lightning-button>
+                <lightning-button style="margin:5px;" variant="brand" type="submit" name="save" label="Create Account"></lightning-button>
+            </div>
+      </lightning-record-edit-form>
+      </div>
+    </lightning-card>
+</template>
