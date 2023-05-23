@@ -1,0 +1,48 @@
+.box{
+    background: gainsboro;
+    min-height: 300px;
+    text-align: center;
+    padding: 32px 16px;
+}
+.pic{
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+}
+.name{
+    font-size: 32px;
+    font-weight: 700;
+}
+.phone, .location, .company{
+    font-size: 20px;
+}
+.social{
+    height: 35px;
+    width: 35px;
+    margin: 16px 16px 0px 0px;
+}
+.tooltip{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+}
+    
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 90px;
+    background-color:whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index:1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -45px;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

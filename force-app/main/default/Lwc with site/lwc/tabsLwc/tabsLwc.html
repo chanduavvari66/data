@@ -1,0 +1,77 @@
+<template>
+    <div class="show-tabs-on-desktop-view" style="background-color: gainsboro; font-size:14px">
+        <lightning-tabset variant="scoped">
+            <lightning-tab label="Summary">
+                <template if:true={recordId}>
+                    <c-summary-Resume record-id={recordId} object-api-name={objectApiName}></c-summary-Resume>
+                </template>
+            </lightning-tab>
+            <lightning-tab label="Work Experience">
+                <template if:true={recordId}>
+                    <c-experience-Resume record-id={recordId} object-api-name={objectApiName}></c-experience-Resume>
+                </template>
+            </lightning-tab>
+            <lightning-tab label="Personal Projects">
+                <c-projects-Resume></c-projects-Resume>
+            </lightning-tab>
+            <lightning-tab label="Skills">
+                <template if:true={recordId}>
+                    <c-skills-Resume record-id={recordId} object-api-name={objectApiName}></c-skills-Resume>
+                </template>
+            </lightning-tab>
+            <lightning-tab label="Education">
+                <template if:true={recordId}>
+                    <c-education-Resume record-id={recordId} object-api-name={objectApiName}></c-education-Resume>
+                </template>
+            </lightning-tab>
+            <lightning-tab label="Certifications">
+                <template if:true={recordId}>
+                    <c-certifications-Resume record-id={recordId} object-api-name={objectApiName}></c-certifications-Resume>
+                </template>
+            </lightning-tab>
+            <lightning-tab label="Others Details">
+                <template if:true={recordId}>
+                    <c-other-Resume record-id={recordId} object-api-name={objectApiName}></c-other-Resume>
+                </template>
+            </lightning-tab>
+        </lightning-tabset>
+    </div>
+
+    <div class="accordion-wrapper show-accordion-on-mobile-view">
+        <lightning-accordion allow-multiple-sections-open>
+            <lightning-accordion-section label="Summary">
+                <template if:true={recordId}>
+                    <c-summary-Resume record-id={recordId} object-api-name={objectApiName}></c-summary-Resume>
+                </template>
+            </lightning-accordion-section>
+            <lightning-accordion-section label="Work Experience">
+                <template if:true={recordId}>
+                    <c-experience-Resume record-id={recordId} object-api-name={objectApiName}></c-experience-Resume>
+                </template>
+            </lightning-accordion-section>
+            <lightning-accordion-section label="Personal Projects">
+                <c-projects-Resume></c-projects-Resume>
+            </lightning-accordion-section>
+            <lightning-accordion-section label="Skills">
+                <template if:true={recordId}>
+                    <c-skills-Resume record-id={recordId} object-api-name={objectApiName}></c-skills-Resume>
+                </template>
+            </lightning-accordion-section>
+            <lightning-accordion-section label="Education">
+                <template if:true={recordId}>
+                    <c-education-Resume record-id={recordId} object-api-name={objectApiName}></c-education-Resume>
+                </template>
+            </lightning-accordion-section>
+            <lightning-accordion-section label="Certifications">
+                <template if:true={recordId}>
+                    <c-certifications-Resume record-id={recordId} object-api-name={objectApiName}></c-certifications-Resume>
+                </template>
+            </lightning-accordion-section>
+            <lightning-accordion-section label="Others Details">
+                <template if:true={recordId}>
+                    <c-other-Resume record-id={recordId} object-api-name={objectApiName}></c-other-Resume>
+                </template>
+            </lightning-accordion-section>
+        </lightning-accordion>
+    </div>
+</template>

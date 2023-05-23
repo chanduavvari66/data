@@ -1,0 +1,24 @@
+<template>
+    <div style="font-size: 16px;">
+        <lightning-record-view-form record-id={recordId} object-api-name={objectApiName}>
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" style="font-size: 14px;"> 
+                    <lightning-output-field field-name="Date_of_birth__c"></lightning-output-field>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" style="font-size: 14px;"> 
+                    <lightning-output-field field-name="Marital_Status__c"></lightning-output-field>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" style="font-size: 14px;"> 
+                    <lightning-output-field field-name="Nationality__c"></lightning-output-field>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" style="font-size: 14px;"> 
+                    <lightning-output-field field-name="Languages__c"></lightning-output-field>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-record-view-form>
+    </div>
+</template>

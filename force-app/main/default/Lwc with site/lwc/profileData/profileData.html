@@ -1,0 +1,30 @@
+<template>
+        <div class="box">
+            <div> <img src={image} class="pic"/></div>
+            <div class="name">{name}</div>
+            <div class="company">{job} {companyname}</div>
+            <div class="phone">{mobile}, {email}</div>
+            <div class="location">{address}-{code}</div>
+            <div>
+                <template if:true={linkedinUrl}>
+                    <a href={linkedinUrl} target="_blank">
+                        <img src={linkedin} class="social"/>
+                    </a>
+                </template>
+                <template if:true={githubUrl}>
+                    <a href={githubUrl} target="_blank">
+                        <img src={github} class="social"/>
+                    </a>
+                </template>
+                <template if:true={trailheadUrl}>
+                    <a href={trailheadUrl} target="_blank">
+                        <img src={trailhead} class="social"/>
+                    </a>
+            </template>
+            </div>
+            <div class="tooltip">
+                <lightning-icon icon-name="action:download" onclick={resumeDownload}></lightning-icon>
+                <span class="tooltiptext" style="font-size:smaller;">Download resume</span>
+            </div>
+        </div>
+</template>
