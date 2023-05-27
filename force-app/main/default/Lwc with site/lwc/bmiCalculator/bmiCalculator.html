@@ -6,12 +6,12 @@
                 <div>
                     <label>Weight(Kg)</label>
                         <div style="color: black;">
-                            <lightning-input type="number" placeholder="Enter your weight in kg" name="Weight" 
+                            <lightning-input type="number" step="0.01" placeholder="Enter your weight in kg" name="Weight" 
                              value={weight} onchange={onweightChange}></lightning-input>
                         </div>
                     <label class="slds-var-m-around_medium">Height(Cm)</label>
                         <div style="color:black">
-                            <lightning-input type="number" placeholder="Enter your height in cm" name="Height"
+                            <lightning-input type="number" step="0.01" placeholder="Enter your height in cm" name="Height"
                              value={height} onchange={onheightChange}></lightning-input>
                         </div>
                 </div>

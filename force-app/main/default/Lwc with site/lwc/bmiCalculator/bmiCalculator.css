@@ -17,7 +17,7 @@
     background-color:dimgray;
     color: var(--light-white);
     padding: var(--size-16);
-    border-radius: 38px;
+    border-radius: 30px;
   }
   h1{
     font-size: 36px;
