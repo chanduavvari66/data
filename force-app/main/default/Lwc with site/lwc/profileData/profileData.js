@@ -52,8 +52,8 @@ export default class ProfileData extends LightningElement {
     get companyname(){
         return getFieldValue(this.resumeData.data, company)
     }
-
-    resumeDownload(){
-        window.open("https://github.com/chanduavvari66/resume/raw/main/Avvari%20Chandu.pdf","_blank")
-    }
+    // For downloading resume
+    //resumeDownload(){
+    //    window.open("https://github.com/chanduavvari66/resume/raw/main/Avvari%20Chandu.pdf","_blank")
+    //}
 }
