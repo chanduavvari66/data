@@ -21,6 +21,7 @@
     width: 35px;
     margin: 16px 16px 0px 0px;
 }
+/*
 .tooltip{
     position: relative;
     display: inline-block;
@@ -35,8 +36,6 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-
-    /* Position the tooltip */
     position: absolute;
     z-index:1;
     bottom: 100%;
@@ -46,3 +45,4 @@
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+*/
