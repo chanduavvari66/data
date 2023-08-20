@@ -1,13 +1,7 @@
 :host(){
     --light-white:#fafafa;
     --light-yellow:#c7c423;
-    --size-16:16px;
-  }
-  .app{
-    min-height: 100vh;
-    background-image: url(/sfsites/c/resource/BMI_Background);
-    background-size: cover;
-    background-repeat: no-repeat;
+    --size-14:14px;
   }
   
   .box{
@@ -16,22 +10,22 @@
     margin: auto;
     background-color:dimgray;
     color: var(--light-white);
-    padding: var(--size-16);
-    border-radius: 38px;
+    padding: var(--size-14);
+    border-radius: 30px;
   }
   h1{
-    font-size: 36px;
-    padding: 20px;
+    font-size: 28px;
+    padding: 10px;
     font-weight: bold;
   }
   .info-bmi{
     background-color: #1d1e33;
-    padding: var(--size-16);
+    padding: 10px;
     border-radius: 38px;
     font-size: 14px;
     text-align: center;
   }
   h2{
-    font-size: 26px;
+    font-size: 20px;
     color: var(--light-yellow);
   }
