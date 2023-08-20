@@ -1,8 +1,9 @@
 # About
 
 This repo consists of lightning web components which are showcased in site (https://chandu-portfolio-dev-ed.my.site.com/)
-
-## Read All About It
+# Components in lwc
+ > Lightning web components (HTML, CSS, JAVASCRIPT, XML)
+# Read All About It
 
 - [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
 - [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
