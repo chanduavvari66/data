@@ -1,7 +1,7 @@
 # About
 
 This repo consists of lightning web components which are showcased in site (https://chandu-portfolio-dev-ed.my.site.com/)
-# Components in lwc
+# Components
  > Lightning web components (HTML, CSS, JAVASCRIPT, XML)
 # Read All About It
 
