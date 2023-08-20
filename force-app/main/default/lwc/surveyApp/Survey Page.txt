@@ -1,3 +1,4 @@
+Login to salesforce org
 1. Go to setup > survey settings > enable both options.
 2. Search for survey in app launcher > Click on NEW > Create survey.
 3. Fill welcome page and Thankyou page > Add pages in between them and add questions as per required.
