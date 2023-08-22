@@ -13,6 +13,7 @@ import user_image from '@salesforce/resourceUrl/User';
 import linkedin_image from '@salesforce/resourceUrl/linkedin';
 import git_image from '@salesforce/resourceUrl/git';
 import trailhead_image from '@salesforce/resourceUrl/trailhead';
+import instagram_image from '@salesforce/resourceUrl/insta';
 import {getRecord, getFieldValue} from 'lightning/uiRecordApi';
 import fullname from '@salesforce/schema/Resume__c.Full_Name__c';
 import Description from '@salesforce/schema/Resume__c.Description__c';
@@ -32,6 +33,7 @@ export default class TabV2 extends LightningElement {
     linkedin = linkedin_image;
     github = git_image;
     trailhead = trailhead_image;
+    instagram = instagram_image;
     html = html;
     css = css;
     bootstrap = bs;
@@ -43,6 +45,7 @@ export default class TabV2 extends LightningElement {
     linkedinUrl = 'https://www.linkedin.com/in/avvari-chandu-500673179';
     githubUrl = 'https://github.com/chanduavvari66/data';
     trailheadUrl = 'https://trailblazer.me/id/avvarichandu';
+    instagramUrl = 'https://www.instagram.com/chandu__12__';
 
 
     @wire(getRecord, {recordId:'$recordId', fields:[fullname,Description,designation,company,about,software]})
