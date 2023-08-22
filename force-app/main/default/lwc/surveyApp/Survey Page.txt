@@ -14,3 +14,5 @@ Login to salesforce org
 13. Come back to sites > builder then click on publish.
 14. After publish we can see link of site. We can share to anyone and can call from any other components
 15. You can see responses of survey in survey's analyze page.
+
+---------------------------------------------------https://chandu-portfolio-dev-ed.my.site.com/survey/s/--------------------------------------------------------------
