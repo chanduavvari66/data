@@ -42,10 +42,18 @@ export default class TabV2 extends LightningElement {
     lwc = lwc;
     git = git_image;
 
+     /* We can declare directly in js.
     linkedinUrl = 'https://www.linkedin.com/in/avvari-chandu-500673179';
     githubUrl = 'https://github.com/chanduavvari66/data';
     trailheadUrl = 'https://trailblazer.me/id/avvarichandu';
     instagramUrl = 'https://www.instagram.com/chandu__12__';
+    */
+
+    //Declared in community page at target configuraions.
+    @api linkedinUrl;
+    @api githubUrl;
+    @api trailheadUrl;
+    @api instagramUrl;
 
 
     @wire(getRecord, {recordId:'$recordId', fields:[fullname,Description,designation,company,about,software]})
