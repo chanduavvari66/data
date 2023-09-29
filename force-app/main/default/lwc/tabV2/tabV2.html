@@ -19,6 +19,11 @@
                     <img src={trailhead} class="social"/>
                 </a>
             </template>
+            <template if:true={instagramUrl}>
+                <a href={instagramUrl} target="_blank">
+                    <img src={instagram} class="social"/>
+                </a>
+            </template>
         </div>    
     </div>
 
@@ -60,6 +65,28 @@
                         </a> 
                         <div class="bottom">
                             <lightning-button variant="brand" label="Currency Converter App" onclick={currencyLink}></lightning-button>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" padding="around-small">
+                    <div class="card">  
+                        <a href="https://chandu-portfolio-dev-ed.my.site.com/discount-calculator" target="_blank">     
+                            <img src={DiscountImage} alt="Discount" style="width:100%"/>
+                        </a> 
+                        <div class="bottom">
+                            <lightning-button variant="brand" label="Discount Calculator App" onclick={discountLink}></lightning-button>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" padding="around-small">
+                    <div class="card">  
+                        <a href="https://chandu-portfolio-dev-ed.my.site.com/emi-calculator" target="_blank">     
+                            <img src={EmiImage} alt="Discount" style="width:100%"/>
+                        </a> 
+                        <div class="bottom">
+                            <lightning-button variant="brand" label="EMI Calculator App" onclick={emiLink}></lightning-button>
                         </div>
                     </div>
                 </lightning-layout-item>

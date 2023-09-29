@@ -9,13 +9,23 @@
         <target>lightningCommunity__Default</target>
     </targets>
     <targetConfigs>
+        <!--Declaring values of recordId,Object,Urls in App Page in edit page mode-->
         <targetConfig targets="lightning__AppPage">
             <property name="recordId" label="Record Id" type="String"/>
             <property name="objectApiName" label="Object Api Name" type="String"/>
+            <property name="linkedinUrl" label="Linkedin Url" type="String"/>
+            <property name="githubUrl" label="Github Url" type="String"/>
+            <property name="trailheadUrl" label="Trailhead Url" type="String"/>
+            <property name="instagramUrl" label="Instagram Url" type="String"/>
         </targetConfig>
+        <!--Declaring values of recordId,Object,Urls in Community Page-->
         <targetConfig targets="lightningCommunity__Default">
             <property name="recordId" label="Record Id" type="String"/>
             <property name="objectApiName" label="Object Api Name" type="String"/>
+            <property name="linkedinUrl" label="Linkedin Url" type="String"/>
+            <property name="githubUrl" label="Github Url" type="String"/>
+            <property name="trailheadUrl" label="Trailhead Url" type="String"/>
+            <property name="instagramUrl" label="Instagram Url" type="String"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
