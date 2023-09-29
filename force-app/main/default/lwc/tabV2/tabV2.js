@@ -3,13 +3,15 @@ import age from '@salesforce/resourceUrl/Age_Image';
 import bmi from '@salesforce/resourceUrl/Bmi_Image';
 import survey from '@salesforce/resourceUrl/Survey_Image';
 import currency from '@salesforce/resourceUrl/converter';
+import discount from '@salesforce/resourceUrl/Discount_Image';
+import emi from '@salesforce/resourceUrl/EMI_Image'		
 import html from '@salesforce/resourceUrl/html';
 import css from '@salesforce/resourceUrl/css';
 import js from '@salesforce/resourceUrl/js';
 import bs from '@salesforce/resourceUrl/boot';
 import lwc from '@salesforce/resourceUrl/lwc';
 import sf from '@salesforce/resourceUrl/salesforce';
-import user_image from '@salesforce/resourceUrl/User';
+import user_image from '@salesforce/resourceUrl/user';
 import linkedin_image from '@salesforce/resourceUrl/linkedin';
 import git_image from '@salesforce/resourceUrl/git';
 import trailhead_image from '@salesforce/resourceUrl/trailhead';
@@ -29,6 +31,8 @@ export default class TabV2 extends LightningElement {
     BmiImage = bmi;
     SurveyImage = survey;
     CurrencyImage = currency;
+    DiscountImage = discount;
+    EmiImage = emi;
     image = user_image;
     linkedin = linkedin_image;
     github = git_image;
@@ -41,8 +45,8 @@ export default class TabV2 extends LightningElement {
     salesforce = sf;
     lwc = lwc;
     git = git_image;
-
-     /* We can declare directly in js.
+    
+    /* We can declare directly in js.
     linkedinUrl = 'https://www.linkedin.com/in/avvari-chandu-500673179';
     githubUrl = 'https://github.com/chanduavvari66/data';
     trailheadUrl = 'https://trailblazer.me/id/avvarichandu';
@@ -89,7 +93,12 @@ export default class TabV2 extends LightningElement {
     }
     currencyLink(){
         window.open('https://chandu-portfolio-dev-ed.my.site.com/currency-converter')
-
+    }
+    discountLink(){
+        window.open('https://chandu-portfolio-dev-ed.my.site.com/discount-calculator')
+    }
+    emiLink(){
+        window.open('https://chandu-portfolio-dev-ed.my.site.com/emi-calculator')
     }
     
 }
