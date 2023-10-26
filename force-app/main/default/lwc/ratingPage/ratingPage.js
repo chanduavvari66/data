@@ -11,6 +11,7 @@ import designation from '@salesforce/schema/Resume__c.Designation__c';
 import company from '@salesforce/schema/Resume__c.Company_Name__c';
 import location from '@salesforce/schema/Resume__c.Location__c';
 import pin from '@salesforce/schema/Resume__c.Pincode__c';
+import years from '@salesforce/schema/Resume__c.Year__c';
 export default class RatingPage extends LightningElement {
     objectName = Feedback
     field1 = Name
@@ -37,7 +38,7 @@ export default class RatingPage extends LightningElement {
     @api recordId
     @api objectApiName
 
-    @wire(getRecord, {recordId:'$recordId', fields:[fullname,phone,designation,company,mail,location,pin]})
+    @wire(getRecord, {recordId:'$recordId', fields:[fullname,phone,designation,company,mail,location,pin,years]})
     resumeData
 
     get name(){
@@ -60,5 +61,8 @@ export default class RatingPage extends LightningElement {
     }
     get code(){
       return getFieldValue(this.resumeData.data, pin)
+    }
+    get year(){
+      return getFieldValue(this.resumeData.data, years)
     }
 }
