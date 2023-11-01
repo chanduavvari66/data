@@ -34,13 +34,17 @@ export default class CurrenyConverterApp extends LightningElement {
     this.clicked=true;
   }
   async convert(){
-    const API_URL = `https://api.exchangerate.host/convert?from=${this.countryFrom}&to=${this.countryTo}`
+     const API_KEY = 'f60ac4818919f393b265b8bd'
+    const API_URL = `https://v6.exchangerate-api.com/v6/${API_KEY}/pair/${this.countryFrom}/${this.countryTo}`
     try{
       const data = await fetch(API_URL)
       const jsonData = await data.json()
-      this.result = (Number(this.amount) * jsonData.result).toFixed(2)
+      debugger;
+      this.result = (Number(this.amount) * jsonData.conversion_rate).toFixed(2)
+      console.log(this.result)
     } catch(error){
-      this.error="An error occurred. Please try again..."
+      console.log(error)
+      this.error="error. Please try again..."
     }
   }
   reset(){
