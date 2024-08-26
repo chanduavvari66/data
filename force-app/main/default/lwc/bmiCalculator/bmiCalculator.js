@@ -1,5 +1,4 @@
 import { LightningElement,track } from 'lwc';
-
 export default class BmiCalculator extends LightningElement {
     @track weight='';
     @track height='';
@@ -33,9 +32,9 @@ export default class BmiCalculator extends LightningElement {
           else{
             this.result='NaN'
           }
-
           this.clicked=true
     }
+    
     back(){ // for ok button and resets values to empty 
         this.clicked=false;
         this.weight = '';
