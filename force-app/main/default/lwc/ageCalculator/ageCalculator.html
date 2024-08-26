@@ -1,10 +1,12 @@
 <template>
     <div class="box">
         <h1>Age Calculator</h1>
+        
         <div class="slds-var-m-around_medium">
             <label>Date of Birth</label>
             <lightning-input type="date" value={startDate} onchange={handleStartDateChange}></lightning-input>
         </div> 
+        
         <div class="slds-var-m-around_medium">      
             <template if:true={dateDifference}>
                 <div>Your age is:{dateDifference.years} years, {dateDifference.months} months and {dateDifference.days} days</div>
