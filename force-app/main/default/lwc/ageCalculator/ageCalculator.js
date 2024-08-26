@@ -1,5 +1,4 @@
 import { LightningElement, track } from 'lwc';
-
 export default class AgeCalculator extends LightningElement {
     @track startDate;
     @track endDate;
