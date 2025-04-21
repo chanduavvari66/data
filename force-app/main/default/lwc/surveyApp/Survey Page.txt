@@ -1,0 +1,18 @@
+Login to salesforce org
+1. Go to setup > survey settings > enable both options.
+2. Search for survey in app launcher > Click on NEW > Create survey.
+3. Fill welcome page and Thankyou page > Add pages in between them and add questions as per required.
+4. Can you modify branding and then activate.
+5. Click on send > Click on get invitation > Click on participants in your company and ouside company and close it.
+6. Click on analyze > you can see responses.
+7. Go to setup > digital experience > enable it.
+8. Go to All Sites > Click on new > Select AURA template > Get started and enter name of page > Go to Builder > From left side there is component section drag and drop survey and then select your survey.
+9. Click on setting icon on left side > General > check the public access.
+10. Click on home then click on 3 dots(Page settings) > change page access to public. 
+11. From top left corner click on builder icon then select administration > Settings > activate the status.
+12. Go back to set up > survey settings > Experience Cloud Site > Choose your site name and save it.
+13. Come back to sites > builder then click on publish.
+14. After publish we can see link of site. We can share to anyone and can call from any other components
+15. You can see responses of survey in survey's analyze page.
+
+---------------------------------------------------https://chandu-portfolio-dev-ed.my.site.com/survey/s/--------------------------------------------------------------

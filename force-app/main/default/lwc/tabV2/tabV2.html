@@ -1,0 +1,127 @@
+<template>
+    <div class="box">
+        <div> <img src={image} class="pic"/></div>
+        <div class="name">{name}</div>
+        <div class="company">{desp}</div>
+        <div>
+            <template if:true={linkedinUrl}>
+                <a href={linkedinUrl} target="_blank">
+                    <img src={linkedin} class="social hover-effect"/>
+                </a>
+            </template>
+            <template if:true={githubUrl}>
+                <a href={githubUrl} target="_blank">
+                    <img src={github} class="social hover-effect"/>
+                </a>
+            </template>
+            <template if:true={trailheadUrl}>
+                <a href={trailheadUrl} target="_blank">
+                    <img src={trailhead} class="social hover-effect"/>
+                </a>
+            </template>
+            <template if:true={instagramUrl}>
+                <a href={instagramUrl} target="_blank">
+                    <img src={instagram} class="social hover-effect"/>
+                </a>
+            </template>
+        </div>    
+    </div>
+
+    <div>
+        <h1 style="text-align: center; padding-top:5%" class="head">About</h1>
+        <p class="about">{aboutme}</p>
+    </div>
+
+    <div>
+    <h1 style="text-align: center; padding-top:5%" class="head">Projects</h1>
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" padding="around-small">
+                    <div class="card">
+                        <a href="https://chandu-portfolio-dev-ed.my.site.com/age-calculator" target="_blank">
+                            <img src={AgeImage} alt="Age Calculator" style="width:100%" class="hover-effect"/>
+                        </a>
+                        <div class="bottom">
+                            <lightning-button variant="brand" label="Age Calculator App" onclick={ageLink}></lightning-button>
+                        </div>
+                    </div>    
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" padding="around-small">
+                    <div class="card">
+                        <a href="https://chandu-portfolio-dev-ed.my.site.com/bmi-calculator" target="_blank">
+                            <img src={BmiImage} alt="BMI Calculator" style="width:100%" class="hover-effect"/>
+                        </a>
+                        <div class="bottom">
+                            <lightning-button variant="brand" label="BMI Calculator App" onclick={bmiLink}></lightning-button>
+                        </div>
+                    </div>    
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" padding="around-small">
+                    <div class="card">  
+                        <a href="https://chandu-portfolio-dev-ed.my.site.com/currency-converter" target="_blank">     
+                            <img src={CurrencyImage} alt="currency" style="width:100%" class="hover-effect"/>
+                        </a> 
+                        <div class="bottom">
+                            <lightning-button variant="brand" label="Currency Converter App" onclick={currencyLink}></lightning-button>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" padding="around-small">
+                    <div class="card">  
+                        <a href="https://chandu-portfolio-dev-ed.my.site.com/discount-calculator" target="_blank">     
+                            <img src={DiscountImage} alt="Discount" style="width:100%" class="hover-effect"/>
+                        </a> 
+                        <div class="bottom">
+                            <lightning-button variant="brand" label="Discount Calculator App" onclick={discountLink}></lightning-button>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" padding="around-small">
+                    <div class="card">  
+                        <a href="https://chandu-portfolio-dev-ed.my.site.com/emi-calculator" target="_blank">     
+                            <img src={EmiImage} alt="Discount" style="width:100%" class="hover-effect"/>
+                        </a> 
+                        <div class="bottom">
+                            <lightning-button variant="brand" label="EMI Calculator App" onclick={emiLink}></lightning-button>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="6" 
+                medium-device-size="4" large-device-size="3" flexibility="auto" padding="around-small">
+                    <div class="card">  
+                        <a href="https://chandu-portfolio-dev-ed.my.site.com/survey" target="_blank">     
+                            <img src={SurveyImage} alt="Survey" style="width:100%" class="hover-effect"/>
+                        </a> 
+                        <div class="bottom">
+                            <lightning-button variant="brand" label="Survey App" onclick={surveyLink}></lightning-button>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+        </lightning-layout>    
+    </div>
+
+    <div style="padding-top:5%; padding-bottom:5%;">
+        <h1 style="text-align: center;" class="head">Skills</h1>
+        <div style="text-align: center;">
+          <span class="hover-effect"><img src={salesforce} alt="salesforce" style="height:20%; width:10.5%;"/></span>
+          <span class="hover-effect"><img src={lwc} alt="lwc" style="height:20%; width:8%;"/></span>
+          <span class="hover-effect"><img src={html} alt="html" style="height:20%; width:7%;"/></span>
+          <span class="hover-effect"><img src={js} alt="javascript" style="height:20%; width:7%;"/></span>
+          
+        </div>
+        <div style="text-align: center;">
+          <span class="hover-effect"><img src={git} alt="git" style="height:20%; width:7%;"/></span>
+          <span class="hover-effect"><img src={css} alt="css" style="height:20%; width:7%;"/></span>
+          <span class="hover-effect"><img src={bootstrap} alt="bootstrap" style="height:20%; width:8%;"/></span>
+        </div>
+    </div>
+      
+    <div style="padding-bottom:3%;">
+        <h1 style="text-align: center;" class="head">Software & Tools</h1>
+        <div style="text-align: center; font-size: 18px; padding-top:1%;">{SoftwareTools}</div>
+    </div>    
+</template>

@@ -1,0 +1,44 @@
+<template>
+    <div class="box">    
+        <h1>Currency Converter</h1>
+        <div class="slds-var-m-around_medium">
+            <img src={image} style="border-radius: 10px;"/>
+        </div>
+        <div class="slds-var-m-around_medium">
+            
+            <lightning-input type="number" variant="label-hidden" required
+            placeholder="Enter Amount" step="0.01" value={amount} onchange={handleChange}></lightning-input>
+            
+            <lightning-layout multiple-rows>
+
+                <lightning-layout-item flexibility="auto">
+                    <lightning-combobox label="From" value={countryFrom} variant="label-hidden"
+                    options={optionsCountry} onchange={handleChangeOne}></lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item flexibility="auto">
+                    <lightning-icon icon-name="utility:jump_to_right" title='Convert icon'></lightning-icon>
+                </lightning-layout-item>
+                
+                <lightning-layout-item flexibility="auto">
+                    <lightning-combobox label="To" value={countryTo} variant="label-hidden"
+                    options={optionsCountry} onchange={handleChangeTwo} ></lightning-combobox>
+                </lightning-layout-item>
+
+            </lightning-layout>
+        
+        </div>
+        
+        <div class="slds-var-m-around_medium">
+            <lightning-button  label="Convert" variant="brand" onclick={submitHandler}></lightning-button>
+        </div>
+        <div class="slds-text-align_center">
+            <template if:true={clicked}>
+              <div class="result">{amount} {countryFrom} = <span class="result-to">{result} {countryTo}</span></div>
+              <lightning-button variant="brand" label="ok" onclick={reset}></lightning-button>
+            </template>
+            <template if:false={clicked}></template>
+        </div> 
+
+    </div>      
+</template>
